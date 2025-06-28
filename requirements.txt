@@ -1,0 +1,9 @@
+streamlit==1.28.0
+tensorflow
+numpy
+pandas
+pillow
+plotly
+protobuf
+groq>=0.4.0
+cohere>=4.0.0
