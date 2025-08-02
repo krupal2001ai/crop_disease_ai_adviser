@@ -3,8 +3,10 @@ import tensorflow as tf
 import numpy as np
 from PIL import Image
 import os
-from langchain.memory import ChatMessageHistory
-from langchain.vectorstores import FAISS
+# from langchain.memory import ChatMessageHistory
+# from langchain.vectorstores import FAISS
+from langchain_community.chat_message_histories import ChatMessageHistory  # Updated import
+from langchain_community.vectorstores import FAISS
 from langchain_core.chat_history import BaseChatMessageHistory
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain.chains import create_retrieval_chain
