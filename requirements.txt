@@ -9,6 +9,10 @@ langchain-huggingface==0.3.0
 langchain-groq==0.2.0
 faiss-cpu==1.8.0
 sentence-transformers==3.1.0
+markdown-it-py==3.0.0
+mdurl==0.1.2
+pygments==2.19.2
+rich==14.1.0
 
 
 
