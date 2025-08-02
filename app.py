@@ -3,7 +3,8 @@ import tensorflow as tf
 import numpy as np
 from PIL import Image
 import os
-from langchain_community.chat_message_histories import ChatMessageHistory
+from langchain.memory import ChatMessageHistory
+from langchain.vectorstores import FAISS
 from langchain_core.chat_history import BaseChatMessageHistory
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain.chains import create_retrieval_chain
@@ -11,7 +12,6 @@ from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain.chains import create_history_aware_retriever
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_community.vectorstores import FAISS
 from langchain_core.documents import Document
 from langchain_groq import ChatGroq
 
